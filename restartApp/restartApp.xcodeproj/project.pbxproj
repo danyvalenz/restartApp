@@ -11,6 +11,8 @@
 		9847DEBC2A37A3ED002D28F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9847DEBB2A37A3ED002D28F5 /* ContentView.swift */; };
 		9847DEBE2A37A3FA002D28F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9847DEBD2A37A3FA002D28F5 /* Assets.xcassets */; };
 		9847DEC12A37A3FA002D28F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9847DEC02A37A3FA002D28F5 /* Preview Assets.xcassets */; };
+		9847DECB2A37A5D1002D28F5 /* success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 9847DEC92A37A5D1002D28F5 /* success.m4a */; };
+		9847DECC2A37A5D1002D28F5 /* chimeup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9847DECA2A37A5D1002D28F5 /* chimeup.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		9847DEBD2A37A3FA002D28F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9847DEC02A37A3FA002D28F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9847DEC22A37A3FA002D28F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9847DEC92A37A5D1002D28F5 /* success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = success.m4a; sourceTree = "<group>"; };
+		9847DECA2A37A5D1002D28F5 /* chimeup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chimeup.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +56,11 @@
 		9847DEB82A37A3ED002D28F5 /* restartApp */ = {
 			isa = PBXGroup;
 			children = (
+				9847DED32A37A6FC002D28F5 /* Utils */,
+				9847DED22A37A6EE002D28F5 /* Views */,
+				9847DECE2A37A5DE002D28F5 /* Sounds */,
 				9847DEB92A37A3ED002D28F5 /* restartAppApp.swift */,
-				9847DEBB2A37A3ED002D28F5 /* ContentView.swift */,
+				9847DED02A37A6E3002D28F5 /* Screens */,
 				9847DEBD2A37A3FA002D28F5 /* Assets.xcassets */,
 				9847DEC22A37A3FA002D28F5 /* Info.plist */,
 				9847DEBF2A37A3FA002D28F5 /* Preview Content */,
@@ -67,6 +74,37 @@
 				9847DEC02A37A3FA002D28F5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9847DECE2A37A5DE002D28F5 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				9847DECA2A37A5D1002D28F5 /* chimeup.mp3 */,
+				9847DEC92A37A5D1002D28F5 /* success.m4a */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		9847DED02A37A6E3002D28F5 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				9847DEBB2A37A3ED002D28F5 /* ContentView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		9847DED22A37A6EE002D28F5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9847DED32A37A6FC002D28F5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +164,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9847DECC2A37A5D1002D28F5 /* chimeup.mp3 in Resources */,
 				9847DEC12A37A3FA002D28F5 /* Preview Assets.xcassets in Resources */,
+				9847DECB2A37A5D1002D28F5 /* success.m4a in Resources */,
 				9847DEBE2A37A3FA002D28F5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,7 +312,7 @@
 				DEVELOPMENT_TEAM = GP7PLHRNR3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = restartApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -280,7 +320,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielV.restartApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -294,7 +334,7 @@
 				DEVELOPMENT_TEAM = GP7PLHRNR3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = restartApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielV.restartApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
